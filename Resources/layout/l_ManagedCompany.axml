@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/linearLayout1">
+                <Button
+                    android:text="УК «Стройлинк»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn1" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol1">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="10dp"
+                            android:id="@+id/tableRow2">
+                            <TextView
+                                android:text="Телефон ЖК Флагман:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:text="@string/StroylinkTel1"
+                                android:id="@+id/telFlagman1"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="10dp">
+                            <TextView
+                                android:text="Телефон \n ЖК АВСТРИЙСКИЙ КВАРТАЛ:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:text="@string/StroylinkTel2"
+                                android:id="@+id/telFlagman2"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:text="@string/StroylinkEmail"
+                                android:id="@+id/emailFlagman"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresFlagman"
+                                android:text="Фермское шоссе, д. 16"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="УК «СЕМЬ СТОЛИЦ»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn2" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol2">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Телефон:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/tel7Stolic"
+                                android:text="@string/tel7Stolic"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="10dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/email7Stolic"
+                                android:text="@string/email7Stolic"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:paddingTop="20dp"
+                            android:paddingLeft="10dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adres7Stolic"
+                                android:text="г. Всеволожск, ул. Межевая, д. 8"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="УК «Наш дом»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn3" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol3">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="10dp">
+                            <TextView
+                                android:text="Телефон:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telNachdom"
+                                android:text="@string/telNachdom"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:text="@string/emailNachdom"
+                                android:id="@+id/emailNachdom"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresNachdom"
+                                android:text="ул. Васенко, дом 12"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="УК «Содружество»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn4" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol4">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Телефон:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telSodruzestvo"
+                                android:text="@string/telSodruzestvo"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:text="@string/emailSodruzestvo"
+                                android:id="@+id/emailSodruzestvo"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresSodruzestvo"
+                                android:text="пр-кт Ветеранов,д.114, к. 3"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Оплата"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/paySodruzestvo"
+                                android:text="pay.pscb.ru/list/?lf=uks"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="ООО «Жилищная эксплуатационная служба № 4»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn5" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol5">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Телефон:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/tel14"
+                                android:text="@string/tel14"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Аварийная:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/tel24"
+                                android:text="@string/tel24"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adres4"
+                                android:text="п БУГРЫ, улица ШКОЛЬНАЯ, д.11"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/email4"
+                                android:text="@string/email4"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="УК &quot;Уют&quot;"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn6" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol6">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Телефон:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telUut"
+                                android:text="@string/telUut"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/emalUut"
+                                android:text="@string/emalUut"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresUut"
+                                android:text="ул.Седова, д.12"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Личный кабинет"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/privateUut"
+                                android:text="ae-comfort.ru/User/LogOn"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Оплата"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/payUut"
+                                android:text="pay.mcplat.ru/article/ukUyut"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+                <Button
+                    android:text="УК «Сервис+»"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn7" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol7">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Бухгалтерия :"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telService1"
+                                android:text="@string/telService1"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Аварийная"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telService2"
+                                android:text="@string/telService2"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адресс"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresService"
+                                android:text="Европейский проспект, д.13"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Личный кабинет"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/privateService"
+                                android:text="lkabinet.online/login.aspx"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+              
+              
+              
+              
+              
+                <Button
+                    android:text="УК &quot;Наш дом - Кудрово Град&quot;"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn8" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol8">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Бухгалтерия:"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telGrad1"
+                                android:text="@string/telGrad1"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Аварийная"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telGrad2"
+                                android:text="@string/telGrad2"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Офис "
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telGrad3"
+                                android:text="@string/telGrad3"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адрес"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresGrad"
+                                android:text="ул.Васенко, дом 12"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/emailGrad"
+                                android:text="@string/emailGrad"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+
+
+
+              <Button
+                   android:text="Управляющая компания"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/btnTest" />
+              <ScrollView
+                  android:minWidth="25px"
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:id="@+id/testScrollView">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:stretchColumns="1">
+                  <TableRow>
+                    <TextView
+                        android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                        android:layout_width="200.0dp"
+                        android:layout_gravity="center" />
+                  </TableRow>
+                  <TableRow
+                      android:paddingTop="20dp"
+                      android:paddingLeft="20dp">
+                    <TextView
+                        android:text="Телефон:"
+                        android:layout_gravity="left" />
+                    <TextView
+                        android:id="@+id/testTel"
+                        android:text="+7 812 000 00 00"
+                        android:layout_gravity="center" />
+                  </TableRow>
+                 
+                 
+                  <TableRow
+                      android:paddingTop="20dp"
+                      android:paddingLeft="20dp">
+                    <TextView
+                        android:text="Email"
+                        android:layout_gravity="left" />
+                    <TextView
+                        android:id="@+id/testEmail"
+                        android:text="Upravdom@gmail.com"
+                        android:layout_gravity="fill" />
+                  </TableRow>
+                </TableLayout>
+              </ScrollView>
+
+
+
+
+
+
+              <Button
+                    android:text="УK: ООО &quot;Управление комфортом&quot;"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn9" />
+                <ScrollView
+                    android:minWidth="25px"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:id="@+id/scrol9">
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="1">
+                        <TableRow>
+                            <TextView
+                                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                                android:layout_width="200.0dp"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Офис "
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/telComfort"
+                                android:text="@string/telComfort"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Адрес"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/adresComfort"
+                                android:text="наб. Обводного канала, д. 118"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Email"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/emailComfort"
+                                android:text="@string/emailComfort"
+                                android:layout_gravity="fill" />
+                        </TableRow>
+                        <TableRow
+                            android:paddingTop="20dp"
+                            android:paddingLeft="20dp">
+                            <TextView
+                                android:text="Личный кабинет"
+                                android:layout_gravity="left" />
+                            <TextView
+                                android:id="@+id/privateComfort"
+                                android:text="lk.uprkom.ru/"
+                                android:layout_gravity="center" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+            </LinearLayout>
+        </ScrollView>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:choiceMode="singleChoice"
+            android:divider="#818181"
+            android:dividerHeight="1dp"
+            android:background="#E3F2FD" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

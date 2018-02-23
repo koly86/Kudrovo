@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView0">
+      <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Приемная Главы МО"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin1"
+            android:id="@+id/tel1"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Администрация "
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin2"
+            android:id="@+id/tel2"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Паспортный стол"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin3"
+            android:id="@+id/tel3"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Военно-учётный стол"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin4"
+            android:id="@+id/tel4"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Специалист по жил. вопросам"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin5"
+            android:id="@+id/tel5"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Специалист по ГОЧС"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin6"
+            android:id="@+id/tel6"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Амбулатория «Заневский пост»"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/admin7"
+            android:id="@+id/tel7"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Адрес"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="дер. Заневка, д.48"
+            android:id="@+id/adres"
+            android:layout_gravity="center" />
+        </TableRow>
+        <TableRow
+          android:paddingTop="20dp"
+          android:paddingLeft="20dp"
+          android:id="@+id/tableRow2">
+          <TextView
+            android:text="Email"
+            android:layout_gravity="left" />
+          <TextView
+            android:text="@string/adminEmail"
+            android:id="@+id/email"
+            android:layout_gravity="center" />
+        </TableRow>
+      </TableLayout>
+    </ScrollView>
+    <ListView
+      android:id="@+id/left_drawer"
+      android:layout_width="240dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:choiceMode="singleChoice"
+      android:divider="#818181"
+      android:dividerHeight="1dp"
+      android:background="#E3F2FD" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

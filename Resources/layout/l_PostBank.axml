@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView0">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <Button
+          android:text="Почта индекс 188691"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnPost1" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrolPost1">
+          <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/postTel1"
+                android:id="@+id/postTel1"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Часы приёма:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="пн-пт с 8-20, сб с 9-18, вс - вых"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Адресс"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/postAdres1"
+                android:text="ул. Областная , дом 1"
+                android:layout_gravity="fill" />
+            </TableRow>
+          </TableLayout>
+        </ScrollView>
+        <Button
+          android:text="Сбербанк Опер.офис №9055/01923"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/btnBank1" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrolBank1">
+          <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/bankTel1"
+                android:id="@+id/bankTel1"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Часы приема:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="пн-пт: 10:00—20:00; сб: 10:00—18:00"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Адресс"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/bankAdres1"
+                android:text="ул. Ленинградская, дом 3"
+                android:layout_gravity="fill" />
+            </TableRow>
+          </TableLayout>
+        </ScrollView>
+      </LinearLayout>
+    </ScrollView>
+    <ListView
+      android:id="@+id/left_drawer"
+      android:layout_width="240dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:choiceMode="singleChoice"
+      android:divider="#818181"
+      android:dividerHeight="1dp"
+      android:background="#E3F2FD" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

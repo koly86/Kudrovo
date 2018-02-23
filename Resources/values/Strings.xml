@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="ApplicationName">Кудрово</string>
+  <string name="openDrawer">Drawer Open</string>
+  <string name="closeDrawer">Drawer Close</string>
+  <!--Administration info-->
+  <string name="admin1">+7 (812) 521-35-56</string>
+  <string name="admin2">+7 (812) 521-80-03</string>
+  <string name="admin3">+7 (812) 400-26-14</string>
+  <string name="admin4">+7 (812) 521-80-03</string>
+  <string name="admin5">+7 (812) 400-26-09</string>
+  <string name="admin6">+7 (812) 400-26-09</string>
+  <string name="admin7">+7 (81370) 78-416</string>
+  <string name="adminEmail">zanevka48@yandex.ru</string>
+
+  <!--Managed Company info-->
+  <string name="StroylinkTel1">+7 (812) 339-39-26</string>
+  <string name="StroylinkTel2">+7 (812) 339-74-02</string>
+  <string name="StroylinkEmail">info@stroylink.su</string>
+
+  <string name="tel7Stolic">+7 (81370) 21081</string>
+  <string name="email7Stolic">secretariegkk@mail.ru</string>
+
+  <string name="telNachdom">+7 (812) 640-8826</string>
+  <string name="emailNachdom">dirukdom@mail.ru</string>
+
+  <string name="telSodruzestvo">+7 (812) 755-23-42</string>
+  <string name="emailSodruzestvo">info@ucsodr.ru</string>
+
+  <string name="tel14">+7 (812) 677-56-89</string>
+  <string name="tel24">+7 (812) 921-49-86</string>
+  <string name="email4">zhesnomer4@mail.ru</string>
+
+  <string name="telUut">+7 (812) 633-32-29</string>
+  <string name="emalUut">support@ae-comfort.ru</string>
+
+  <string name="telService1">+7 (931) 359-28-01</string>
+  <string name="telService2">+7 (812) 318-11-67</string>
+
+  <string name="telGrad1">+7 812 640 88 26</string>
+  <string name="telGrad2">+7 812 640-88-23</string>
+  <string name="telGrad3">+7 812 640 88 63</string>
+  <string name="emailGrad">uk.nash-dom@mail.ru</string>
+
+  <string name="telComfort">+7 (812) 633-05-62</string>
+  <string name="emailComfort">info@uprkom.ru</string>
+
+  <!--Post Bank Information-->
+  <string name="postTel1">+7 (812) 616-03-22</string>
+  <string name="bankTel1">+7 (800) 555-55-50</string>
+
+  <!--Schools Information-->
+  <string name="tel1">+7 (812) 616 01 58</string>
+  <string name="tel2">+7 (812) 616 01 62</string>
+  <string name="email1">kudrovo-sch-1@yandex.ru</string>
+  <string name="tel3">+7 (812) 616-03-15</string>
+  <string name="tel4">+7 (812) 616-03-18</string>
+  <string name="email2">educentr@vsv.lokos.net</string>
+  <string name="tel5">+7 (812) 616 00 83</string>
+  <string name="email3">kudrovo-sch-1@yandex.ru</string>
+
+  <!--Transport Information-->
+  <string name="telBus1">+7 (812) 309-10-10</string>
+  <string name="telBus2">+7 (81370) 29595</string>
+</resources>

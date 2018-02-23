@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--The mait Context-->
+    <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView0">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <Button
+          android:text="№ 596 А"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/button1" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrollView1">
+          <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/telBus1"
+                android:id="@+id/telBus1"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="интервал движения в час пик"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="5 - 7 минут"
+                android:layout_gravity="center"
+                android:id="@+id/tel2" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="График движения"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/addres1"
+                android:text="6:30 - 23:30"
+                android:layout_gravity="fill" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Стоимость проезда"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/email1"
+                android:text="30 рублей"
+                android:layout_gravity="left"
+                android:layout_width="200.0dp" />
+            </TableRow>
+            <TextView
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="Маршрут следования" />
+            <TextView
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="ул.Дыбенко — д.Кудрово: ул.Ленинградская-ул.Центральная , ул.Пражская-Европейский пр., пр.Строителей" />
+          </TableLayout>
+        </ScrollView>
+        <Button
+          android:text="№ 618"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/button2" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrollView2">
+          <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/telBus2"
+                android:id="@+id/telBus2"
+                android:layout_gravity="left" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="интервал движения в час пик"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="5 - 7 минут"
+                android:layout_gravity="left"
+                android:id="@+id/tel2" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="График движения"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/addres1"
+                android:text="07:40 - 22:10"
+                android:layout_gravity="left" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Стоимость проезда"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/email1"
+                android:text="22-105 руб."
+                android:layout_gravity="left"
+                android:layout_width="200.0dp" />
+            </TableRow>
+            <TextView android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:text="Расписание"
+                      android:padding="5dp" />
+            <TextView
+              android:padding="5dp"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="От Мега Дыбенко: 09:00, 9:40, 12:00, 12:40, 15:30, 16:10, 18:30, 19:10, 21:30, 22:10" />
+            <TextView
+              android:layout_marginLeft="5dp"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="От пл.Всеволожская: 7:40, 8:20, 10:30, 11:10, 14:00, 14:40, 17:00, 17:40, 20:40, 21:20" />
+
+            <TextView
+              android:padding="5dp"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="Маршрут следования" />
+            <TextView
+              android:padding="5dp"
+              android:layout_height="wrap_content"
+              android:layout_width="match_parent"
+              android:text="Пл.Всеволожская - микрорайон Котово Поле - ЦРБ - микрорайон Южный - п. Колтуши (ТРЦ) - улица Верхняя - д. Новосергеевка - ЖК &quot;Новый Оккервиль&quot; - ТРЦ &quot;МЕГА-Дыбенко&quot;" />
+          </TableLayout>
+        </ScrollView>
+      </LinearLayout>
+    </ScrollView>
+    <!--The left Navigator Drawer-->
+    <ListView
+      android:id="@+id/left_drawer"
+      android:layout_width="240dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:choiceMode="singleChoice"
+      android:divider="#818181"
+      android:dividerHeight="1dp"
+      android:background="#E3F2FD" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

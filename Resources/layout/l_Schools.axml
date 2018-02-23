@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+  <android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+      android:minWidth="25px"
+      android:minHeight="25px"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/scrollView0">
+      <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout1">
+        <Button
+          android:text="ДОУ Кудровская СОШ 1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/button1" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrollView1">
+          <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/tel1"
+                android:id="@+id/tel1"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Бухгалтерия:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/tel2"
+                android:layout_gravity="center"
+                android:id="@+id/tel2" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Адресс"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/addres1"
+                android:text="ул. Центральная, дом 48"
+                android:layout_gravity="fill" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="E-mail:"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/email1"
+                android:text="@string/email1"
+                android:layout_gravity="left"
+                android:layout_width="200.0dp" />
+            </TableRow>
+          </TableLayout>
+        </ScrollView>
+        <Button
+          android:text="МОБУ СОШ &quot;Центр образования Кудрово&quot;"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/button2" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrollView2">
+          <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон канцелярии:"
+                android:layout_gravity="left"
+                android:id="@+id/textView4" />
+              <TextView
+                android:text="@string/tel3"
+                android:id="@+id/tel3"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Телефон завуча:"
+                android:layout_gravity="left" />
+              <TextView
+                android:text="@string/tel4"
+                android:id="@+id/tel4"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Адресс"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/addres2"
+                android:text="ул. Березовая, дом 1"
+                android:layout_gravity="fill" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="E-mail:"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/email2"
+                android:text="@string/email2"
+                android:layout_gravity="left"
+                android:layout_width="200.0dp" />
+            </TableRow>
+          </TableLayout>
+        </ScrollView>
+        <Button
+          android:text="Дошкольное отделение"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/button3" />
+        <ScrollView
+          android:minWidth="25px"
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:id="@+id/scrollView3">
+          <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:stretchColumns="1">
+            <TableRow>
+              <TextView
+                android:text="КОНТАКТНАЯ ИНФОРМАЦИЯ"
+                android:layout_width="200.0dp"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp"
+              android:id="@+id/tableRow2">
+              <TextView
+                android:text="Телефон:"
+                android:layout_gravity="left"
+                android:id="@+id/textView4" />
+              <TextView
+                android:text="@string/tel5"
+                android:id="@+id/tel5"
+                android:layout_gravity="center" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="Адресс"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/addres3"
+                android:text="Европейский проспект, д.3"
+                android:layout_gravity="fill" />
+            </TableRow>
+            <TableRow
+              android:paddingTop="20dp"
+              android:paddingLeft="20dp">
+              <TextView
+                android:text="E-mail:"
+                android:layout_gravity="left" />
+              <TextView
+                android:id="@+id/email3"
+                android:text="@string/email3"
+                android:layout_gravity="left"
+                android:layout_width="200.0dp" />
+            </TableRow>
+          </TableLayout>
+        </ScrollView>
+      </LinearLayout>
+    </ScrollView>
+    <ListView
+      android:id="@+id/left_drawer"
+      android:layout_width="240dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="start"
+      android:choiceMode="singleChoice"
+      android:divider="#818181"
+      android:dividerHeight="1dp"
+      android:background="#E3F2FD" />
+  </android.support.v4.widget.DrawerLayout>
+</LinearLayout>
